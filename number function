@@ -1,0 +1,21 @@
+/*
+3. Muuta edellistä ohjelmaa siten, että lisäät siihen luvunTulostus() nimisen aliohjelman. Tätä
+aliohjelmaa kutsutaan pääohjelmasta (sitten, kun luku on luettu) ja siihen välitetään luettu
+kokonaisluku. luvunTulostus() aliohjelma tulostaa siihen välitetyn luvun näytölle.
+*/
+
+#include <stdio.h>
+
+int main() {
+    
+    void printNumber(int);
+        printf("Give number: \n");
+        int numberC;
+        scanf("%d", &numberC);
+        printNumber(numberC);
+        return 0;
+    }
+    
+void printNumber(int numberC) {
+    printf("Entered number %d", numberC);
+}
